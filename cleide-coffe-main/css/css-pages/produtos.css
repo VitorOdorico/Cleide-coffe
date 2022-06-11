@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #202020;
+    height: 8vh;
+}
+
+main {
+    background-color: #fff;
+    background-size: cover;
+    height: 92vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+
+/* fim cabeçalho */
+
+
+/* iniicio produtos */
+
+.area-produtos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6%;
+    margin-top: 5%;
+}
+
+.linha1 {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
+}
+
+
+/* linha 2 de produtos */
+
+.linha2 {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+
+/* linha 3 de produtos */
+
+.linha3 {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.produto-linha {
+    border: solid #202020 2px;
+    background: #202020;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 17%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.produto-linha img {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 70%;
+    height: 85%;
+    border-radius: 5px;
+}
+
+.produto-linha p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.produto-linha hr {
+    width: 50%;
+    margin-top: 2%;
+}
+
+.produto-linha h3 {
+    color: rgb(187, 146, 33);
+    font-size: 26px;
+}
+
+.vendas-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+.button-buy {
+    margin-top: 6%;
+    border: solid rgb(187, 146, 33) 2px;
+    background: rgb(187, 146, 33);
+    border-radius: 5px;
+    align-items: center;
+}
+
+.button-buy a {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
+.card-icon {
+    margin-top: 9%;
+    display: flex;
+    margin-left: 2ch;
+    border: solid #fff;
+    background: white;
+    border-radius: 50%;
+    color: #202020;
+}
+
+
+/* fim produtos */
+
+
+/* rodapé */
+
+
+/* footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+} */
+
+
+/* fim rodapé */
+
+
+/* inicio media */
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 30vw;
+        height: 40vh;
+        background-color: #202020;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5vh;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    /* .area1-banner {
+        width: 100%;
+        height: 100%;
+        float: right;
+        text-align: center;
+    } */
+}
+
+.nav-list.active {
+    transform: translateX(0) !important;
+}
+
+.produtos-cadastro {
+    background-color: #202020;
+    margin-top: 5%;
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+}
+
+.cadastrar-produtos {
+    width: 50%;
+    padding: 2% 0% 2% 4%;
+}
+
+.visualizar-produtos {
+    width: 50%;
+    text-align-last: end;
+    padding: 2% 4% 2% 0%;
+}

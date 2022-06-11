@@ -1,0 +1,408 @@
+/* alternaative text
+/* .area1-texto .play-btn {
+    width: 50px;
+    border-radius: 20%;
+    cursor: pointer;
+    margin: 0 30px 0 70px;
+    vertical-align: middle;
+    box-shadow: 0 0 16px 2px #686767;
+} */
+
+
+/* .area1-texto span {
+    display: table;
+    margin: 50px auto;
+} */
+
+
+/* 
+.area1-texto span::after {
+    content: '';
+    width: 110px;
+    height: 2px;
+    background: #202020;
+    top: 400px;
+    left: 170px;
+    position: absolute;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #202020;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.especialidades-main {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+
+/* main */
+
+
+/* area 1 */
+
+.area1 {
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    /* position: relative; */
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.area1-texto {
+    width: 50%;
+    height: 100%;
+    float: left;
+    z-index: 1;
+}
+
+.area1-texto h1 {
+    /* margin: 100px 0 50px 70px; */
+    line-height: 40px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+
+.area1-texto h1::after {
+    /* content: ''; */
+    width: 150px;
+    height: 2px;
+    background: #202020;
+    top: 27%;
+    left: 28%;
+    /* position: absolute; */
+}
+
+.area1-texto p {
+    padding-left: 70px;
+    line-height: 25px;
+    font-size: 22px;
+    padding: 0;
+}
+
+area1-banner {
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: center;
+}
+
+area1-banner img {
+    top: 2vh;
+    width: 100%;
+    margin: 100px auto;
+}
+
+
+/* area2 */
+
+
+/* titulo espec inicio */
+
+.area2 {
+    width: 100%;
+    height: 70vh;
+    background: #202020;
+    margin-top: 3%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.titulo-area2 {
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+
+
+/* titulo espec fim */
+
+
+/* espec main inicio */
+
+.espec {
+    border: #fff solid;
+    background: #fff;
+    border-radius: 2%;
+}
+
+.titulo-espec {
+    text-align: center;
+    color: #202020;
+    font-size: 18px;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.desc-espec {
+    text-align: center;
+    color: #202020;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 5%;
+}
+
+
+/* espec main fim */
+
+
+/* area 3 inicio */
+
+.area3 {
+    width: 100%;
+    height: 60vh;
+    background: #202020;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.diferencial-titulo {
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+
+.diferencial-main {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.destaques {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destaques img {
+    width: 100%;
+}
+
+.texto-destaques {
+    color: #fff;
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+/* fim area3 */
+
+
+/* inicio area 4 */
+
+.area4 {
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+}
+
+.main-area4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* gap: 15%; */
+}
+
+.imagem-area-box {
+    margin-top: 5%;
+    width: 50%;
+}
+
+.imagem-area-box img {
+    border: solid #1f1e1e 7px;
+    border-radius: 2%;
+    /* position: absolute; */
+    /* top: 320%;
+    z-index: 3; */
+}
+
+.box-text-area {
+    border: solid #202020 2px;
+    width: 56%;
+    height: 8.5vh;
+    background: #1f1e1e;
+}
+
+.text-box {
+    font-size: 24px;
+    padding-top: 4%;
+    color: #fff;
+    text-align: center;
+}
+
+.icon-heart {
+    color: white;
+    border: 1px solid #202020;
+    border-radius: 100%;
+    background: #f1df39;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    left: 0;
+    top: 290%;
+    z-index: 3; */
+    /* margin-top: -22%; */
+}
+
+
+/* textors area 4 */
+
+.textos-area4 {
+    padding-top: 8%;
+    height: 100vh;
+}
+
+#texto-area4-p1 {
+    font-size: 24px;
+    color: #e29f0d;
+}
+
+#texto-area4-h3 {
+    font-size: 36px;
+    color: #202020;
+    font-weight: normal;
+    padding-top: 2%;
+}
+
+#texto-area4-p2 {
+    font-size: 28px;
+    padding-top: 6%;
+}
+
+.textos-area4 h4 {
+    font-size: 32px;
+    color: #e29f0d;
+    padding-top: 5%;
+    padding-bottom: 9%;
+}
+
+.textos-area4 a {
+    color: #ffffff;
+    margin-left: 35%;
+    border: solid #1f1e1e 2px;
+    background: #202020;
+    border-radius: 5%;
+    padding: 2%;
+}
+
+
+/* fim texto area 4 */
+
+
+/* fim area 4 */
+
+
+/* Media mobile */
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 30vw;
+        height: 50vh;
+        background-color: #202020;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+        z-index: 2;
+    }
+    .nav-list li {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 5vh;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    /* .area1-banner {
+        width: 100%;
+        height: 100%;
+        float: right;
+        text-align: center;
+    } */
+    .especialidades-main {
+        display: flex;
+        flex-direction: column;
+        gap: 5%;
+        justify-content: center;
+        margin-top: 2%;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0) !important;
+}
+
+
+    
